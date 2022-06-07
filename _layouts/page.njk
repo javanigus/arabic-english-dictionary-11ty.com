@@ -1,0 +1,10 @@
+---
+layout: default.njk
+---
+<div class="subnav" style="display: none;">
+    {% include "subnav.njk" %}
+</div>
+<div class="content">
+    {{ content | safe }}
+    {% include "extra.html" %}
+</div>

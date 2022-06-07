@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+    {% include "head.html" %}
+    <body>
+        {% include "header.html" %}
+        <div class="content-wrapper">
+            <div class="nav" style="display: none;">
+                {% include "nav.html" %}
+            </div>
+            {{ content | safe }}
+        </div>
+        {% include "footer.html" %}
+        {% include "script.html" %}
+    </body>
+</html>
